@@ -45,7 +45,7 @@ namespace Space_Race_Summative
         SolidBrush skyblueBrush = new SolidBrush(Color.SkyBlue);
         SolidBrush goldBrush = new SolidBrush(Color.Gold);
 
-        Pen greenPen = new Pen(Color.Green, 6); //greenPen for time 
+        Pen greenPen = new Pen(Color.Olive, 6); //greenPen for time 
 
         SoundPlayer crash = new SoundPlayer(Properties.Resources.Crash);
         SoundPlayer start = new SoundPlayer(Properties.Resources.Start);
@@ -356,13 +356,13 @@ namespace Space_Race_Summative
 
                 player2.X = 200;
                 player2.Y = 439;
-
-                //Game final
+            }
+                
 
                 if(time == 0 && player1Score > player2Score)
                 {
                     start.Play();
-                    subLabel.Text = "Player1 Wins";
+                    winLabel.Text = "Player1 Wins";
 
                     gameTimer.Stop();
                 }
@@ -370,7 +370,7 @@ namespace Space_Race_Summative
                else if (time == 0 && player2Score > player1Score)
                 {
                     start.Play();
-                    subLabel.Text = "Player2 Wins";
+                    winLabel.Text = "Player2 Wins";
 
                     gameTimer.Stop();
                 }
@@ -378,16 +378,17 @@ namespace Space_Race_Summative
                 if (time == 0 && player1Score == player2Score)
                 {
                     start.Play();
-                    subLabel.Text = "TIE";
+                    winLabel.Text = "TIE";
 
                     gameTimer.Stop();
                 }
 
-                Refresh();
+                
 
 
 
-            }
+            
+            Refresh();
 
         }
     }

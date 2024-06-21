@@ -38,6 +38,7 @@
             this.player2Label = new System.Windows.Forms.Label();
             this.playerLabel2 = new System.Windows.Forms.Label();
             this.scorelabel2 = new System.Windows.Forms.Label();
+            this.winLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // gameTimer
@@ -70,18 +71,18 @@
             // 
             this.titlelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titlelabel.ForeColor = System.Drawing.Color.Blue;
-            this.titlelabel.Location = new System.Drawing.Point(286, 92);
+            this.titlelabel.Location = new System.Drawing.Point(309, 22);
             this.titlelabel.Name = "titlelabel";
-            this.titlelabel.Size = new System.Drawing.Size(266, 93);
+            this.titlelabel.Size = new System.Drawing.Size(266, 63);
             this.titlelabel.TabIndex = 2;
             // 
             // subLabel
             // 
             this.subLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subLabel.ForeColor = System.Drawing.Color.Blue;
-            this.subLabel.Location = new System.Drawing.Point(299, 195);
+            this.subLabel.Location = new System.Drawing.Point(347, 232);
             this.subLabel.Name = "subLabel";
-            this.subLabel.Size = new System.Drawing.Size(253, 92);
+            this.subLabel.Size = new System.Drawing.Size(201, 92);
             this.subLabel.TabIndex = 3;
             // 
             // playerScore2
@@ -123,12 +124,22 @@
             this.scorelabel2.TabIndex = 7;
             this.scorelabel2.Text = "0";
             // 
+            // winLabel
+            // 
+            this.winLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel.ForeColor = System.Drawing.Color.Blue;
+            this.winLabel.Location = new System.Drawing.Point(388, 123);
+            this.winLabel.Name = "winLabel";
+            this.winLabel.Size = new System.Drawing.Size(201, 92);
+            this.winLabel.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.winLabel);
             this.Controls.Add(this.scorelabel2);
             this.Controls.Add(this.playerLabel2);
             this.Controls.Add(this.player2Label);
@@ -160,6 +171,7 @@
         private System.Windows.Forms.Label player2Label;
         private System.Windows.Forms.Label playerLabel2;
         private System.Windows.Forms.Label scorelabel2;
+        private System.Windows.Forms.Label winLabel;
     }
 }
 
